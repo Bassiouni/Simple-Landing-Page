@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+nav {
+    height: 70px;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    box-shadow: 0px -10px 20px 0px black;
+}
+
+#nav-div-list {
+    float: right;
+    min-width: 40%;
+    max-width: 60%;
+    margin-top: 24px;
+    margin-right: 10px;
+}
+
+#nav-div-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-div-list ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: 0.3s ease-out;
+}
+
+#nav-div-list ul li a:hover {
+    background-color: #5484eb;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease-out;
+}
+
+nav ul li:hover, #outfit:hover, #logo:hover {
+    cursor: pointer;
+}
+
+#logo {
+    width: 130px;
+    height: 68px;
+    float: left;
+}
+
+#main-name {
+    float: left;
+    margin-top: 14px;
+    font-size: 30px;
+}
