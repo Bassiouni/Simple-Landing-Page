@@ -48,7 +48,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-nav ul li:hover, #outfit:hover, #logo:hover {
+nav ul li:hover, #main-name:hover, #logo:hover {
     cursor: pointer;
 }
 
