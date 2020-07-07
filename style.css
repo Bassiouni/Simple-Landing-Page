@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
     background: #6649b8;
 }
 
-hr {
+.hr {
     float: left;
     width: 40%;
 }
@@ -50,16 +50,15 @@ hr {
     align-items: center;
 }
 
-#nav-div-list ul li a {
+#nav-div-list ul li span {
     color: black;
-    text-decoration: none;
     padding: 8px;
     border-radius: 8px;
     font-size: 20px;
     transition: 0.3s ease-out;
 }
 
-#nav-div-list ul li a:hover, #dark-mode:hover {
+#nav-div-list ul li span:hover, #dark-mode:hover {
     background-color: #5484eb;
     font-weight: bold;
     color: white;
@@ -72,12 +71,14 @@ nav ul li:hover, #main-name:hover, #logo:hover {
 
 #main-name {
     float: left;
-    margin-top: 14px;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 40px;
+    padding-left: 15px;
 }
 
 #page-content {
     padding-top: 80px;
+    display: flex;
 }
 
 #cards {
@@ -87,7 +88,7 @@ nav ul li:hover, #main-name:hover, #logo:hover {
 }
 
 .card {
-    margin-left: 26px;
+    margin-left: 20px;
     margin-bottom: 2em;
     padding: 13px;
     padding-bottom: 40px;
@@ -99,7 +100,7 @@ nav ul li:hover, #main-name:hover, #logo:hover {
 .card:hover {
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.479);
     cursor: pointer;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 }
 
 .card-content {
@@ -123,14 +124,54 @@ nav ul li:hover, #main-name:hover, #logo:hover {
     cursor: pointer;
     color: honeydew;
     background: rgb(43, 135, 189);;
-    /*box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.479);*/
     font-weight: bold;
-    transition: .3s ease-out;
+    transition: 0.3s ease-out;
 }
 
-#search {
-    margin-top: 20px;
-    width: 150px;
+#right-side-content {
+    width: 34%;
+    padding-top: 20px;
+    float: right;
+    margin-left: 30px;
+}
+
+#messages ul li .contact {
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 1.25em;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.479);
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+#messages ul li .contact:hover {
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+#messages ul {
+    list-style: none;
+}
+
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+.context {
+    padding-left: 10px;
+}
+
+.contact-name {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.contact-image {
+    width: 50px;
+    height: 50px;
 }
 
 footer {

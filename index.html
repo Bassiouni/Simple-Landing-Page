@@ -8,6 +8,7 @@
 </head>
 <body>
     <div id="app">
+        <!--* Nav Bar *-->
         <nav id="navbar">
             <span style="font-size: 48px; color: Dodgerblue;">
                 <i class="fab fa-github"></i>
@@ -15,16 +16,23 @@
             <span id="main-name">Blog Post</span>
             <div id="nav-div-list">
                 <ul>
-                    <li><a href="#">Articles</a></li>
-                    <li><a href="#">Messages</a></li>
-                    <li><a id="dark-mode">Dark Mode</a></li>
+                    <li><span>Log In</span></li>
+                    <li><span>Sign Up</span></li>
                 </ul>
             </div>
         </nav>
-        <div id="page-content">
+
+        <!--*  Application  *-->
+        <section id="page-content">
+
+            <!--* Left Side Content *-->
             <div id="cards">
-                <h1 id="page-content-title">Last Articles</h1>
-                <br><hr><br>
+                <h1 id="page-content-title">
+                    Last Articles
+                </h1>
+                <br>
+                <hr class="hr">
+                <br>
                 <div class="card">
                     <header class="page-title">
                         <h2>Lorem Ipsum</h2>
@@ -37,11 +45,38 @@
                     <button class="btn-read-more">Read More</button>
                 </div>
             </div>
-        </main>
+            
+            <!--* Right Side Content *-->
+            <section id="right-side-content">
+                <h1>Messages</h1>
+                <br>
+                <hr class="hr">
+                <br>
+                <div id="messages">
+                    <ul>
+                        <li>
+                            <div class="contact">
+                                <img class="contact-image"/>
+                                <div class="context">
+                                    <span class="contact-name">Lorem</span>
+                                    <br>
+                                    <span class="contact-message">Lorem ipsum dolor sit amet, consectetur...</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </section>
+
     </div>
+
+    <!--* Footer *-->
     <footer>
         <span>No copyright &copy; 2020</span>
     </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

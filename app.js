@@ -1,4 +1,4 @@
-const darkModeBtn = document.querySelector('#dark-mode');
+/*const darkModeBtn = document.querySelector('#dark-mode');
 const app = document.querySelector('#app')
 let isDarkMode = false;
 
@@ -8,7 +8,7 @@ darkModeBtn.addEventListener('click', e => {
         app.style.backgroundColor = '';
         isDarkMode = false;
     } else {
-        app.style.backgroundColor = 'gray'
+        app.style.backgroundColor = '#000'
         isDarkMode = true;
     }
-})
+})*/
