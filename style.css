@@ -9,12 +9,30 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
-nav {
+body::-webkit-scrollbar {
+    width: 0.25em;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #6649b8;
+}
+
+hr {
+    float: left;
+    width: 40%;
+}
+
+#navbar {
     height: 70px;
     width: 100%;
     background: #fff;
     color: #000;
     box-shadow: 0px -10px 20px 0px black;
+    position: fixed;
 }
 
 #nav-div-list {
@@ -41,7 +59,7 @@ nav {
     transition: 0.3s ease-out;
 }
 
-#nav-div-list ul li a:hover {
+#nav-div-list ul li a:hover, #dark-mode:hover {
     background-color: #5484eb;
     font-weight: bold;
     color: white;
@@ -52,14 +70,76 @@ nav ul li:hover, #main-name:hover, #logo:hover {
     cursor: pointer;
 }
 
-#logo {
-    width: 130px;
-    height: 68px;
-    float: left;
-}
-
 #main-name {
     float: left;
     margin-top: 14px;
     font-size: 30px;
+}
+
+#page-content {
+    padding-top: 80px;
+}
+
+#cards {
+    width: 60%;
+    padding-top: 20px;
+    padding-left: 2em;
+}
+
+.card {
+    margin-left: 26px;
+    margin-bottom: 2em;
+    padding: 13px;
+    padding-bottom: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.479);
+    transition: 0.3s ease-out;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.479);
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.card-content {
+    padding-left: 26px;
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+}
+
+.btn-read-more {
+    float: right;
+    border: 2px solid rgb(43, 135, 189);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.479);
+    color: rgb(43, 135, 189);
+    transition: 0.3s ease-out;
+}
+
+.btn-read-more:hover {
+    cursor: pointer;
+    color: honeydew;
+    background: rgb(43, 135, 189);;
+    /*box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.479);*/
+    font-weight: bold;
+    transition: .3s ease-out;
+}
+
+#search {
+    margin-top: 20px;
+    width: 150px;
+}
+
+footer {
+    background: #1e1e24;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 3em;
+    padding-top: 30px;
 }

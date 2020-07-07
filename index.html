@@ -8,19 +8,40 @@
 </head>
 <body>
     <div id="app">
-        <nav>
-            <img src="logo.jpg" id="logo">
-            <span id="main-name">Main</span>
+        <nav id="navbar">
+            <span style="font-size: 48px; color: Dodgerblue;">
+                <i class="fab fa-github"></i>
+            </span>
+            <span id="main-name">Blog Post</span>
             <div id="nav-div-list">
                 <ul>
-                    <li><a href="#">Home</a></li>
                     <li><a href="#">Articles</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a id="dark-mode">Dark Mode</a></li>
                 </ul>
             </div>
         </nav>
-        <main id="page-content"></main>
-        <footer></footer>
+        <div id="page-content">
+            <div id="cards">
+                <h1 id="page-content-title">Last Articles</h1>
+                <br><hr><br>
+                <div class="card">
+                    <header class="page-title">
+                        <h2>Lorem Ipsum</h2>
+                    </header>
+                    <br>
+                    <main class="card-content">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur vitae magnam nihil consequatur soluta veritatis ad aperiam! Perspiciatis sint cumque vel dolorem totam iure, ex, quisquam tempora, eius magnam fugit!
+                    </main>
+                    <br>
+                    <button class="btn-read-more">Read More</button>
+                </div>
+            </div>
+        </main>
     </div>
+    <footer>
+        <span>No copyright &copy; 2020</span>
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
